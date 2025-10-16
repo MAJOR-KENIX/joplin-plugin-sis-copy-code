@@ -1,0 +1,64 @@
+.sisCode-span
+{
+	position: relative;
+	display: inline-block;
+}
+
+.joplin-editable:has(.sisCode-button)
+{
+	position: relative;
+}
+
+.joplin-editable .sisCode-button, .sisCode-span .sisCode-button
+{
+	opacity: 0;
+	border: none;
+	cursor: pointer;
+	position: absolute;
+	mask-size: contain;
+	mask-position: center;
+	mask-repeat: no-repeat;
+	background-position: center;
+	background-color: currentColor;
+	transition: opacity ease 0.32s, filter ease 0.64s;
+	mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path fill="white" d="M10,6c0,0.552,0.448,1,1,1h10c0.552,0,1-0.448,1-1V3c0-0.552-0.448-1-1-1h-2.184C18.403,0.837,17.304,0,16,0s-2.403,0.837-2.816,2H11c-0.552,0-1,0.448-1,1V6z M28,6v23c0,1.657-1.343,3-3,3H7c-1.657,0-3-1.343-3-3V6c0-1.657,1.343-3,3-3h2v2H7C6.448,5,6,5.448,6,6v23c0,0.552,0.448,1,1,1h18c0.552,0,1-0.448,1-1V6c0-0.552-0.448-1-1-1h-2V3h2C26.657,3,28,4.343,28,6z M23,6c0,1.103-0.897,2-2,2H11C9.897,8,9,7.103,9,6H7v23h18V6H23z M19.5,19h-7c-0.276,0-0.5-0.224-0.5-0.5c0-0.276,0.224-0.5,0.5-0.5h7c0.276,0,0.5,0.224,0.5,0.5C20,18.776,19.776,19,19.5,19z M19.5,17h-7c-0.276,0-0.5-0.224-0.5-0.5c0-0.276,0.224-0.5,0.5-0.5h7c0.276,0,0.5,0.224,0.5,0.5C20,16.776,19.776,17,19.5,17z M19.5,15h-7c-0.276,0-0.5-0.224-0.5-0.5c0-0.276,0.224-0.5,0.5-0.5h7c0.276,0,0.5,0.224,0.5,0.5C20,14.776,19.776,15,19.5,15z"/></svg>');
+}
+
+.sisCode-span .sisCode-button
+{
+	top: 50%;
+	right: 4px;
+	width: 14px;
+	height: 14px;
+	transform: translateY(-50%);
+}
+
+.joplin-editable .sisCode-button
+{
+	width: 18px;
+	height: 18px;
+}
+
+.joplin-editable:hover .sisCode-button, .sisCode-span:hover .sisCode-button
+{
+	opacity: 0.32;
+	filter: none;
+}
+
+.joplin-editable .sisCode-button:hover, .sisCode-span .sisCode-button:hover
+{
+	opacity: 0.84;
+	filter: none;
+}
+
+.joplin-editable .sisCode-button.onSuccess, .sisCode-span .sisCode-button.onSuccess
+{
+	transition: filter 0s;
+	filter: brightness(0) saturate(100%) invert(56%) sepia(33%) saturate(4181%) hue-rotate(114deg) brightness(103%) contrast(103%);
+}
+
+.joplin-editable .sisCode-button.onError, .sisCode-span .sisCode-button.onError
+{
+	transition: filter 0s;
+	filter: brightness(0) saturate(100%) invert(13%) sepia(99%) saturate(3128%) hue-rotate(353deg) brightness(102%) contrast(119%);
+}
