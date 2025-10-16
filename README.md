@@ -9,7 +9,7 @@ A lightweight **Joplin plugin** that adds a convenient **“Copy” button** to 
 
 
 ## Preview
-![See copy button](assets/screenshots/shots_0.png)
+![See copy button](https://cdn.jsdelivr.net/gh/MAJOR-KENIX/joplin-plugin-sis-copy-code@main/assets/screenshots/shots_0.png)
 
 
 ## Building

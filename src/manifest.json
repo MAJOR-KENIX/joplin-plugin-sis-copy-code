@@ -6,8 +6,8 @@
 	"name": "SIS•SOFT Code Copy",
 	"description": "Adds a button to each code block in Joplin Markdown to copy its content.",
 	"author": "SIS•SOFT",
-	"homepage_url": "",
-	"repository_url": "",
+	"homepage_url": "https://github.com/MAJOR-KENIX/joplin-plugin-sis-copy-code",
+	"repository_url": "https://github.com/MAJOR-KENIX/joplin-plugin-sis-copy-code",
 	"keywords": [
 		"Copy",
 		"Code"
